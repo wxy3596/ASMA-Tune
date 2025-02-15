@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="ASMA-Tune synergizes encoder architectures with decoder-based LLMs to enable comprehensive assembly code understanding.">
+  <meta name="keywords" content="LLM, Assembly Comprehension, Instruction Tuning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ASMA-Tune</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <style>
+    .main-title {
+      background: linear-gradient(45deg, #2c3e50, #3498db, #27ae60, #e74c3c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 300% 300%;
+      animation: gradient-shift 5s ease infinite;
+    }
+    .key-features {
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+    .key-features ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+    }
+    .key-features li {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+    .disabled-link {
+      pointer-events: none;
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              ASMA-Tune: Unlocking LLMs' Assembly Code Comprehension via Structural-Semantic Instruction Tuning</h1>
+            
+            <!-- Removed author information section -->
+            
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Empty Paper Link -->
+                <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark disabled-link">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                
+                <!-- Empty Code Link -->
+                <span class="link-block">
+                  <a class="external-link button is-normal is-rounded is-dark disabled-link">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code Coming Soon</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Framework Overview Section -->
+  <section class="hero is-light">
+    <div class="hero-body">
+      <div class="container is-widescreen">
+        <h2 class="title is-3 has-text-centered">Framework Overview</h2>
+        <div class="has-text-centered">
+          <img src="./static/images/Overview.png" 
+               alt="Framework Overview" 
+               style="width: 80%; max-width: 900px; border-radius: 10px;">
+        </div>
+        <div class="key-features">
+          <ul>
+            <li>We introduce ASMA-Tune, the first end-to-end instruction-tuning framework decoupling assembly processing through an assembly-specific encoder integrated with decoder-based LLMs, enhancing assembly semantic understanding and instruction-following abilities.
+            <li>We enable the creation of high-quality assembly instruction-following data by developing a data reformation pipeline converting assembly-text pairs via LLMs. Additionally, we present ASMA-Bench, a comprehensive benchmark featuring two datasets with paired assembly code, instructions, and detailed annotations.</li>
+            <li>Our experiments demonstrate average state-of-the-art performance across 7 benchmarks and ASMA-Bench over existing models. Furthermore, we open-sourced both our toolkit and instruction tuning dataset of 407K assembly-text pairs to support future research endeavors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benchmark Comparison Section -->
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+          <h2 class="title is-3 has-text-centered">Benchmark Comparison</h2>
+          <div class="has-text-centered">
+            <img src="./static/images/BCSD_evaluation.png" 
+                 alt="Benchmark Comparison" 
+                 style="width: 100%; max-width: 900px; border-radius: 10px;">
+          </div>
+        </div>
+      </div>
+
+      <!-- Abstract Section -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+          <p class="has-text-centered" style="margin: 2rem 0;">
+            Analysis and comprehension of assembly code are crucial in various applications, such as reverse engineering. However, the low information density and lack of explicit syntactic structures in assembly code pose significant challenges. Pioneering approaches with masked language modeling (MLM)-based methods have been limited by facilitating natural language interaction. While recent methods based on decoder-focused large language models (LLMs) have significantly enhanced semantic representation, they still struggle to capture the nuanced and sparse semantic patterns in assembly code. In this paper, we propose Assembly Augmented Tuning (ASMA-Tune), an end-to-end structural-semantic instruction-tuning framework. Our approach synergizes encoder architectures with decoder-based LLMs to enable comprehensive code understanding. Experiments show that ASMA-Tune outperforms existing benchmarks, significantly enhancing assembly code comprehension and instruction-following abilities.
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Removed all JavaScript related to video handling -->
+</body>
+</html>
